@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Railways</title>
+  <link rel="stylesheet" href="css1/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+</head>
+<body>
+  <header>
+    <div id="logo" onclick="slowScroll('#top')">
+       <span href="login_page.php" target="_blank">AITU Railways</span>
+    </div>
+    <div id="about">
+
+      <a href="#" onclick="slowScroll('#contacts')" title="Contacts">Contacts</a>
+      <a href="#" onclick="slowScroll('#faq')" title="FAQ">FAQ</a>
+        <a href="customer_homepage.php" onclick="slowScroll('#profile')" title="Profile">Profile page</a>
+    </div>
+  </header>
+
+<div class="newsasthey" style="padding-top: 100px">
+  <div class="newscont">
+      <hr>
+      <a href="https://kapital.kz/gosudarstvo/96375/do-alakolya-zapustyat-dopolnitel-nyy-poyezd.html">
+          <div class=" photomaybe1">
+              <img src="https://www.biletik.aero/upload/iblock/390/3902cd8e2ac20fc8c285506704e7841a.jpg" width="320px" height="180px">
+          </div>
+
+          <div class="someshorttextmaybe">
+              <h2>До Алаколя запустят дополнительный поезд</h2>
+              <span>Он начнет курсировать с 15 июня</span>
+              <p>12.06.2021</p>
+          </div>
+      </a>
+      <hr>
+
+      <a href="https://ria.ru/20210607/poezd-1735931796.html">
+          <div class="photomaybe1">
+              <video src="https://video.img.ria.ru/Out/Flv/20210607/2021_06_07_PakistRIA16x91920x1080_va5nrgh0.3kf.mp4" width="320px" height="180px">
+          </div>
+
+          <div class="someshorttextmaybe">
+              <h2>Два поезда столкнулись на юге Пакистана, погибли 30 человек</h2>
+              <span> По меньшей мере 30 человек погибли в результате столкновении двух поездов на юге Пакистана в понедельник, есть пострадавшие, сообщает местный телеканал ARY News.</span>
+              <p>07.06.2021</p>
+          </div>
+      </a>
+      <hr>
+
+      <a href="https://24.kz/ru/news/incidents/item/479307-sumku-so-117-mln-tenge-ukrali-u-spyashchej-passazhirki-poezda">
+          <div class="photomaybe1">
+              <img src="https://24.kz/media/k2/items/cache/e1d1c2ac4b08fc6f3c53a9de37e9bfbe_XL.jpg" width="320px" height="180px">
+          </div>
+
+          <div class="someshorttextmaybe">
+              <h2>Сумку со 117 млн тенге украли у спящей пассажирки поезда</h2>
+              <span>31 мая текущего года 22-летняя пассажирка поезда сообщением «Костанай-Алматы» везла с собой крупную сумму денег в размере 116 900 000 тенге. Ни о чем не подозревая, молодая девушка вечером легла спать. Проснувшись ночью на станции Жаксы, когда поезд тронулся, обнаружила, что сумки, в которой находились деньги, нет.</span>
+              <p>09.06.2021</p>
+          </div>
+      </a>
+      <hr>
+
+      <a href="https://informburo.kz/novosti/s-11-iyunya-v-ust-kamenogorske-razreshena-posadka-i-vysadka-passazhirov-poezda-almaty-oskemen">
+          <div class="photomaybe">
+              <img src="data:image/jpeg;base64,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">
+          </div>
+
+          <div class="someshorttextmaybe">
+              <h2>С 11 июня в Усть-Каменогорске разрешена посадка и высадка пассажиров поезда Алматы – Оскемен</h2>
+              <span>С середины мая посадка пассажиров в Усть-Каменогорске была запрещена из-за ситуации по Civid-19 в области.</span>
+              <p>10.06.2021</p>
+          </div>
+      </a>
+      <hr>
+      <a href="https://www.inform.kz/ru/skol-ko-poezdov-priostanovili-v-kazahstane-iz-za-pandemii_a3795726">
+          <div class="photomaybe1">
+              <img src="https://www.inform.kz/radmin/news/2021/06/02/210602124450317e.JPG" width="320px" height="180px">
+          </div>
+
+          <div class="someshorttextmaybe">
+              <h2>Сколько поездов приостановили в Казахстане из-за пандемии</h2>
+              <span>За четыре месяца этого года в Казахстане перевезено 4,4 млн пассажиров в железнодорожной сфере, передает корреспондент МИА «Казинформ».</span>
+              <p>02.06.2021</p>
+          </div>
+      </a>
+      <hr>
+
+      <a href="https://mgorod.kz/nitem/poezd-tulpar-talgo-snova-budet-ezdit-v-uralsk-i-atyrau/">
+          <div class="photomaybe1">
+              <img src="https://mgorod.kz/wp-content/uploads/2017/09/talgo-4.jpeg" width="320px" height="180px">
+          </div>
+
+          <div class="someshorttextmaybe">
+              <h2>Поезд "Тулпар Тальго" снова будет ездить в Уральск и Атырау</h2>
+              <span>АО «Пассажирские перевозки» запускает четыре коммерческих поезда, сформированных из вагонов «Тальго», сообщает корреспондент портала "Мой ГОРОД".</span>
+              <p>20.05.2021</p>
+          </div>
+      </a>
+      <hr>
+      <a href="https://tengrinews.kz/kazakhstan_news/sredniy-ball-ent-snizilsya-glava-mon-414146/">
+          <div class="photomaybe1">
+              <img src="https://tengrinews.kz/userdata/news/2020/news_393929/thumb_m/photo_311220.jpeg" width="320px" height="180px">
+          </div>
+
+          <div class="someshorttextmaybe">
+              <h2>В Казахстане с апреля поменяется график движения поездов</h2>
+              <span>Компания "Пассажирские перевозки" на своем сайте сообщила о некоторых изменениях в графике движения пассажирских поездов.</span>
+              <p>9.03.2021</p>
+          </div>
+      </a>
+      <hr>
+
+      <a href="https://tengrinews.kz/events/poezd-sbil-mujchinu-v-karagandinskoy-oblasti-361055/">
+          <div class="photomaybe1">
+              <img src="https://tengrinews.kz/userdata/news/2019/news_361055/thumb_m/photo_269839.jpg" width="320px" height="180px">
+          </div>
+
+          <div class="someshorttextmaybe">
+              <h2>Поезд сбил мужчину в Карагандинской области</h2>
+              <span>В Карагандинской области мужчина попал под колеса поезда, передает корреспондент Тengrinews.kz со ссылкой на пресс-службу "КТЖ-Грузовые перевозки".</span>
+              <p>9.01.2019</p>
+          </div>
+      <hr>
+  </div>
+
+  <footer id="footer" class="footer-1">
+  <div class="main-footer widgets-dark typo-light">
+  <div class="container">
+  <div class="row">
+
+  <div class="col-xs-12 col-sm-6 col-md-3">
+  <div class="widget subscribe no-box">
+  <h5 class="widget-title">AITU Railways<span></span></h5>
+  <p>About the company, little discription will goes here.. </p>
+  </div>
+  </div>
+
+  <div class="col-xs-12 col-sm-6 col-md-3">
+  <div class="widget no-box">
+  <h5 class="widget-title">Quick Links<span></span></h5>
+  <ul class="thumbnail-widget">
+
+    <li>
+    <div class="thumb-content"><a href="dev.html">About developers</a></div>
+    </li>
+    <li>
+    <div class="thumb-content"><a href="news.html">News</a></div>
+    </li>
+  </ul>
+  </div>
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-3">
+  <div class="widget no-box">
+  <h5 class="widget-title">Get Started<span></span></h5>
+  <p>Search and Buy Ralway tickets..</p>
+  <a class="btn" href="login_page.php" target="_blank">Register Now</a>
+  </div>
+  </div>
+
+
+
+  <div class="col-xs-12 col-sm-6 col-md-3">
+
+  <div class="widget no-box">
+  <h5 class="widget-title">Contact Us<span></span></h5>
+
+  <p><a href="mailto:info@domain.com" title="glorythemes">aiturailways@gmail.com</a></p>
+  <ul class="social-footer2">
+  <li class=""><a href="" target="_blank" title="Facebook"><img src="facebook.png" width="30" height="30" ></a></li>
+  <li class=""><a href="https://t.me/Obitosdespair" target="_blank" title="Telegram"><img src="telegram.png" width="30" height="30" ></a></li>
+  <li class=""><a title="instagram" target="_blank" href=""><img src="instagram.png" width="30" height="30" ></a></li>
+  </ul>
+  </div>
+  </div>
+
+  </div>
+  </div>
+  </div>
+
+  <div class="footer-copyright">
+  <div class="container">
+  <div class="row">
+  <div class="col-md-12 text-center">
+  <p>Copyright AITU Railways © 2021. All rights reserved.</p>
+  </div>
+  </div>
+  </div>
+  </div>
+  </footer>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+     function slowScroll(id) {
+       $('html, body').animate({
+         scrollTop: $(id).offset().top
+       }, 500);
+     }
+
+     $(document).on("scroll", function () {
+       if($(window).scrollTop() === 0)
+         $("header").removeClass("fixed");
+       else
+         $("header").attr("class", "fixed");
+     });
+   </script>
+
+
+
+</body>
+</html>
